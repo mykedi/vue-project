@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filterWrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.filter {
+    display: flex;
+    gap: 4px;
+    margin: 12px;
+}
