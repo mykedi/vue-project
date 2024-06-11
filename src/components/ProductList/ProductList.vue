@@ -38,6 +38,7 @@ import { ref, onMounted } from 'vue';
 import styles from './ProductList.module.css'
 import Skeleton from "@/components/common/Skeleton/Skeleton.vue";
 import Filter from "@/components/common/Filter/Filter.vue";
+import api from '@/api/services/product-service.js'
 
 const products = ref([]);
 const filteredProducts = ref([]);
@@ -49,13 +50,12 @@ const categories = {
   electronics: 'Электроника',
   jewelery: 'Ювелирные украшения',
 }
-const handleUrl = 'https://fakestoreapi.com/products'
 
 const getProducts = async () => {
   isPending.value = true;
   try {
-    const data = await fetch(handleUrl);
-    products.value = await data.json();
+    const { data } = await api.getProducts()
+    products.value = data
     filteredProducts.value = products.value;
   } catch (error) {
   } finally {

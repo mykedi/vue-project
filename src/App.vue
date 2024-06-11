@@ -5,10 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <section class="page">
     <RouterLink to="/">Главная</RouterLink>
-
-    <header>
-      <h2 class="header">Список товаров:</h2>
-    </header>
+    <RouterLink to="/cart">Корзина</RouterLink>
 
     <RouterView />
   </section>
@@ -17,10 +14,6 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
 .page {
   width: 100%;
-}
-
-.header {
-  margin: 16px 0 8px;
-  font-weight: bold;
+  padding: 24px 44px;
 }
 </style>

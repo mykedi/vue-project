@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    gap: 8px
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    min-width: 100px;
+    padding: 8px;
+    font-size: 1em;
+    background: none;
+    border: 2px solid var(--vt-c-light-green);
+    border-radius: 8px;
+    outline: none;
+}

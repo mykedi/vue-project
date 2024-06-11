@@ -1,0 +1,12 @@
+h2 {
+    font-size: 1.3em;
+}
+
+.categoryTitle {
+    font-weight: bold;
+}
+
+.header {
+    margin: 16px 0 8px;
+    font-weight: bold;
+}

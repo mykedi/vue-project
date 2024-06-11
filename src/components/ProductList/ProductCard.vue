@@ -11,9 +11,10 @@
   </div>
   <div :class="styles.toCartBtn">
     <Button
-        text="Добавить в корзину"
         @when-click="addToCart"
-    />
+    >
+      Добавить в корзину
+    </Button>
   </div>
 </div>
 </template>
